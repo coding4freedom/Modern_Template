@@ -1,0 +1,70 @@
+/* 
+
+Font Imports
+
+*/
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Inter", sans-serif;  
+}
+
+a {
+    text-decoration: none;
+}
+
+li {
+    list-style-type: none;
+}
+
+.container {
+    padding: 0 48px;
+}
+
+.row {
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+/*
+
+Nav Section
+
+*/
+
+.nav__left {
+    display: flex;
+    justify-content: center;
+    align-items: center;    
+}
+
+.nav__logo {
+    margin-right: 20px;
+}
+
+.nav__img {
+    width: 40px;
+    height: 40px;
+    border-radius: 4px;
+}
+
+.nav__links {
+    display: flex;
+}
+
+.nav__lists {
+    display: flex;
+    justify-content: space-between;
+
+}
+
+.nav__list {
+    margin: 0 24px;
+}
