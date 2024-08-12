@@ -48,7 +48,7 @@ button {
     max-width: 1400px;
     margin: 0 auto;
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
     align-items: center;
 }
 
@@ -69,7 +69,7 @@ Nav Section
 
 #landing {
     width: 100%;
-    height: 100vh;
+    height: 83vh;
     padding: 32px;
 }
 
@@ -77,6 +77,10 @@ nav {
     height: 100px;
     width: 100%;
     display: flex;    
+}
+
+.nav__row {
+    justify-content: space-between;
 }
 
 .nav__left {
@@ -213,19 +217,24 @@ Features sections
 
 */
 
-.features {
+#features {
+    height: 100vh;
+    padding: 8rem 0;
+}
+
+.features {    
     display: flex;
     flex-direction: column;
 }
 
 .feature__description {
-    width: 50%;
+    width: 90%;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     gap: 2rem;    
-    margin-bottom: 3rem;
+    margin-bottom: 4.5rem;
 }
 
 .feature__header--span {
@@ -234,11 +243,12 @@ Features sections
 }
 
 .feature__title {
-    font-size: 3rem;
+    font-size: 3.2rem;
+    font-weight: 900;
 }
 
 .feature__para {
-    width: 85%;
+    width: 50%;
     font-size: 1.1rem;
     text-align: center;    
 }
@@ -250,6 +260,9 @@ Features sections
 
 
 .feature__services {
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
     display: flex;
     align-self: start;
     justify-content: space-between;
@@ -261,13 +274,22 @@ Features sections
     flex-direction: column;
     align-items: start;
     text-align: left;
-}  
+} 
+
+.feature__service--title {
+    font-size: 1.7rem;
+    font-weight: 700;
+    margin-bottom: 1rem;
+}
+
 .feature__service--para {
     line-height: 2;
+    font-weight: 500;
 }
 
 .feature__service--options {
     display: flex;
+    justify-content: center;    
     flex-basis: 310px;
     margin-right: 3rem; 
     margin-bottom: 3rem;   
@@ -290,4 +312,56 @@ Features sections
 .feature__service--img {
     width: 25px;
     height: 25px;
+}
+
+/*
+
+Quality Section
+
+*/
+#quality {    
+    height: 70vh;
+    display: flex;
+    max-width: 1400px;
+    margin: 0 auto;    
+}
+
+.quality__description {
+    width:  45%;
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    align-items: start;        
+}
+
+.quality__description--span {
+    font-size: 1.2rem;
+    font-weight: 600;
+}
+
+.quality__description--header {
+    font-size: 3.2rem;
+    font-weight: 900;
+}
+
+.quality__description--para {
+    font-size: 1.2rem;
+    font-weight: 500;
+}
+
+.quality__right--wrapper {
+    width: 55%;
+}
+
+.quality__img--wrapper {
+    width: 100%;
+    overflow: hidden;
+    border: 1px solid lightgray;
+    border-radius: 6px;
+    margin-left: 3rem;
+}
+
+.quality__img {
+    max-width: 100%;
+    height: auto;
 }
