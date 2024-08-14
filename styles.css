@@ -347,6 +347,7 @@ Quality Section
 .quality__description--para {
     font-size: 1.2rem;
     font-weight: 500;
+    color: #7c8ba1;
 }
 
 .quality__right--wrapper {
@@ -364,4 +365,63 @@ Quality Section
 .quality__img {
     max-width: 100%;
     height: auto;
+}
+
+/*
+
+Steps Section
+
+*/
+#steps {
+    height: 95vh;
+    display: flex;
+}
+
+.steps__img--wrapper {
+    width: 100%;
+    overflow: hidden;
+}
+
+.steps__img {
+    width: 100%;
+}
+
+.steps__description {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+
+.steps__span {
+    font-size: 1.1rem;
+    font-weight: 700;
+}
+
+.steps__title {
+    font-size: 2.8rem;
+    font-weight: 900;
+}
+
+.steps__lists--wrapper {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+}
+
+.steps__list--item {
+    display: flex;
+    gap: 1.5rem;
+}
+
+.steps__list--number {
+    font-size: 2rem;
+    font-weight: 700;
+    color: #cbd530;
+}
+
+.steps__instruction--wrapper {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
 }
