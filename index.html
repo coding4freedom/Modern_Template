@@ -9,10 +9,11 @@
 </head>
 <body>
     <section id="landing">
+        <div class="landing__circle"></div>
         <nav class="container">
             <div class="row nav__row">
                 <div class="nav__left">
-                    <a href="#" class="nav__logo--link">
+                    <a href="#" class="nav__logo--link no-cursor">
                         <figure class="nav__logo">
                             <img src="./assets/t_logo.jpg" class="nav__img" alt="">                            
                         </figure>
@@ -23,16 +24,16 @@
                     <div class="nav__links">
                         <ul class="nav__lists">
                             <li class="nav__list">
-                                <a href="" class="nav__link">About</a>
+                                <a href="#quality" class="nav__link">About</a>
                             </li>
                             <li class="nav__list">
-                                <a href="" class="nav__link">Blog</a>
+                                <a href="#testimon" class="nav__link">Blog</a>
                             </li>
                             <li class="nav__list">
-                                <a href="" class="nav__link">Pricing</a>
+                                <a href="#pricing" class="nav__link">Pricing</a>
                             </li>
                             <li class="nav__list">
-                                <a href="" class="nav__link">Contact Us</a>
+                                <a href="#contact" class="nav__link">Contact Us</a>
                             </li>
                         </ul>
                         <ul class="nav__lists">
@@ -80,6 +81,7 @@
         </header>
     </section>
     <section id="features" class="container">
+        <div class="features__circle"></div>
         <section class="row features">
             <section class="feature__description">
                 <span class="gray-blue feature__header--span">FEATURES</span>
@@ -160,8 +162,8 @@
             </section>
         </section>
     </section>
-    <section id="quality" class="container">
-        <section class="row">
+    <section id="quality" class="container">        
+        <section class="row quality__row">
             <section class="quality__description">
                 <span class="quality__description--span gray-blue">QUALITY WORK</span>
                 <h2 class="quality__description--header">
@@ -178,6 +180,9 @@
                 <figure class="quality__img--wrapper">
                     <img src="./assets/landing_page_img.png" class="quality__img" alt="" />
                 </figure>
+                <div class="quality__dotted">
+                    <img src="./assets/dotted_img.png" alt="">
+                </div>
             </section>
         </section>
     </section>
@@ -185,6 +190,9 @@
         <section class="row steps__row">
             <figure class="steps__img--wrapper">
                 <img src="./assets/landing_page_img.png" class="steps__img" alt="">
+            </figure>
+            <figure class="steps__dotted">
+                <img src="./assets/dotted_img.png" alt="">
             </figure>
             <div class="steps__description">
                 <span class="steps__span gray-blue">STEPS</span>
@@ -317,7 +325,7 @@
                             BUY NOW
                         </button>
                     </div>
-                </div>
+                </div>                
                 <div class="pricing__plan--containers small">
                     <div class="pricing__type">
                         <span class="pricing__type-title">
@@ -389,6 +397,9 @@
                     </div>
                 </div>
             </section>
+            <figure class="pricing__heart">
+                <img src="./assets/heart_img.png" alt="">
+            </figure>
         </section>
     </section>
     <section id="testimon" class="container">
@@ -445,14 +456,18 @@
     </section>
     <section id="contact" class="container">
         <section class="contact__row row">
+            <div class="contact__circle"></div>
+            <div class="contact__circle1"></div>
             <div class="contact__content">
                 <h3 class="contact__header">
                     Developers all over the world are happily using Treact.
                 </h3>
                 <div class="contact__btn--wrapper">
-                    <button class="contact__btn--get">
-                        Get Started
-                    </button>
+                    <a href="#steps">
+                        <button class="contact__btn--get">
+                            Get Started
+                        </button>
+                    </a>
                     <button class="contact__btn--us">
                         Contact Us
                     </button>
@@ -461,6 +476,8 @@
         </section>
     </section>
     <footer class="container">
+        <div class="footer__circle"></div>
+        <div class="footer__circle1"></div>
         <section class="row footer__row">
             <section class="footer__top">
                 <div class="footer__list--wrapper">

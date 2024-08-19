@@ -69,9 +69,24 @@ Nav Section
 */
 
 #landing {
+    position: relative;
     width: 100%;
     height: 83vh;
     padding: 32px;
+    overflow: hidden;
+}
+
+.landing__circle {
+    position: absolute;
+    content: '';
+    height: 180px;
+    width: 180px;
+    top: 69%;
+    left: -5%;
+    border-radius: 50%;
+    background-color: #eceff8;
+    z-index: -1;
+    
 }
 
 nav {
@@ -219,8 +234,22 @@ Features sections
 */
 
 #features {
-    height: 90vh;
+    position: relative;
+    height: 83vh;
     padding: 8rem 0;
+    overflow: hidden;
+}
+
+.features__circle {
+    position: absolute;
+    content: '';
+    height: 180px;
+    width: 180px;
+    right: -5%;
+    top: 77%;
+    border-radius: 50%;
+    background-color: #ffecee;
+    z-index: -1;
 }
 
 .features {    
@@ -320,11 +349,15 @@ Features sections
 Quality Section
 
 */
-#quality {    
+#quality {      
     height: 70vh;
     display: flex;
     max-width: 1400px;
-    margin: 0 auto;    
+    width: 100%;
+    margin: 0 auto;        
+}
+.quality__row {
+    width: 100%;    
 }
 
 .quality__description {
@@ -352,20 +385,46 @@ Quality Section
 }
 
 .quality__right--wrapper {
+    position: relative;
     width: 55%;
+    display: flex;
+    flex: 1;
+    justify-content: center;
+    align-items: center;    
+}
+
+.quality__dotted {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    width: 100px;
+    transform: translate(40px, 40px);
+    overflow: hidden;
+    z-index: -1;
+}
+
+.quality__dotted, 
+.quality__dotted img {
+    width: 80px;
+    height: 80px;
 }
 
 .quality__img--wrapper {
-    width: 100%;
-    overflow: hidden;
+    position: relative;    
+    width: 100%;   
     border: 1px solid lightgray;
     border-radius: 6px;
     margin-left: 3rem;
+    display: block;
+    overflow: hidden;    
 }
 
 .quality__img {
-    max-width: 100%;
+    width: 100%;
     height: auto;
+    display: block;
+    overflow: hidden;
+       
 }
 
 /*
@@ -383,14 +442,33 @@ Steps Section
 }
 
 .steps__img--wrapper {
+    position: relative;
+    display: block;
     width: 100%;
     overflow: hidden;
     border: 18px solid #000;
     border-radius:16px;
 }
 
+.steps__dotted {
+    position: absolute;
+    width: 180px;
+    height: 120px;
+    left: 23.5%;    
+    transform: translateY(175px);
+    z-index: -1;
+    opacity: 0.5;    
+}
+
+.steps__dotted img {
+    width: 100%;
+    height: auto;
+}
+
 .steps__img {
-    width: 100%;    
+    display: block;
+    width: 100%;
+    position: relative;    
 }
 
 .steps__description {
@@ -597,10 +675,18 @@ Pricing Section
 }
 
 .pricing__divs {
+    position: relative;
     display: flex;
     height: 70%;
     margin-top: 3rem;
     gap: 2.5rem;
+}
+
+.pricing__heart {
+    position: absolute;
+    left: 267px;
+    transform: translateY(450px);
+    z-index: -1;
 }
 
 .pricing__divs .pricing__plan--containers:first-child .pricing__type--btn,
@@ -889,10 +975,34 @@ Contact Section
 */
 
 .contact__row {
+    position: relative;
     height: 282px;
     background-color: #4267b2;
     border-radius: 8px;
     margin-bottom: 20rem;
+    overflow: hidden;
+}
+
+.contact__circle,
+.contact__circle1,
+.footer__circle,
+.footer__circle1 {
+    position: absolute;
+    background-color: #000;
+    height: 300px;
+    width: 300px;
+    border-radius: 50%;
+    opacity: .1;
+}
+
+.contact__circle {    
+    bottom: -120px;
+    left: -60px;    
+}
+
+.contact__circle1 {
+    right: -100px;
+    top: -230px;
 }
 
 .contact__content {
@@ -903,7 +1013,7 @@ Contact Section
     align-items: center;
     padding-left: 10%;
     padding-right: 10%;
-
+    z-index: 1;
 }
 
 .contact__header {
@@ -943,9 +1053,21 @@ Footer Section
 */
 
 footer {
+    position: relative;
     width: 100%;
     height: 522px;
-    background-color: #4267b2;    
+    background-color: #4267b2;
+    overflow: hidden;    
+}
+
+.footer__circle {
+    left: -120px;
+    top: -155px;
+}
+
+.footer__circle1 {
+    right: -160px;
+    transform: translateY(350px);
 }
 
 .footer__row {
