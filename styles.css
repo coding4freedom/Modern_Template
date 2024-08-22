@@ -167,6 +167,48 @@ nav {
     margin-right: -1rem;
 }
 
+.toggle__btn,
+.nav__close--btn {
+    background-color: #fff;
+    color: #000;
+    font-size: 1.3rem;
+}
+
+.nav__toggle {
+    display: none;
+    background: none;
+    border: none;
+    top: 20px;
+    right: 20px;
+}
+.nav__close {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    background: none;
+    border: none;
+}
+
+.nav__popup {
+    display: none;    
+    position: fixed;
+    top: 5px;
+    right: 0;
+    width: 100%;
+    height: 40%;
+    background-color: #fff;
+    border: 1px solid rgba(0, 0, 0, 0.2);
+    border-radius: 6px;
+    margin: .5rem;
+    z-index: 5;
+    overflow: auto;
+}
+.popup__lists {   
+    flex-direction: column;
+    justify-content: center;
+    gap: 2rem;
+}
+
 /*
 
 Header Section
@@ -195,6 +237,8 @@ header {
     width: 70%;    
     display: flex;
     flex-direction: column;
+    align-items: start;
+    justify-content: flex-start;
     gap: 28px;   
 }
 
@@ -209,7 +253,7 @@ header {
 }
 
 .header__micro-form {
-    max-width: 450px;
+    width: 90%;
     display: flex;
     justify-content: space-between;
     border: 1px solid lightgray;
@@ -261,7 +305,7 @@ Features sections
 #features {
     position: relative;
     height: 83vh;
-    padding: 8rem 0;
+    padding: 8rem 32px;
     overflow: hidden;
 }
 
@@ -319,8 +363,8 @@ Features sections
     max-width: 1200px;
     margin: 0 auto;
     display: flex;
-    align-self: start;
-    justify-content: space-between;
+    align-self: center;
+    justify-content: center;
     flex-wrap: wrap;
 }
 
@@ -478,8 +522,7 @@ Steps Section
 .steps__img--wrapper {
     position: relative;
     display: block;
-    width: 100%;
-    overflow: hidden;
+    width: 100%;   
     border: 18px solid #000;
     border-radius:16px;
 }
@@ -488,8 +531,8 @@ Steps Section
     position: absolute;
     width: 180px;
     height: 120px;
-    left: 23.5%;    
-    transform: translateY(175px);
+    left: 38%;
+    transform: translateY(-60px);     
     z-index: -1;
     opacity: 0.5;    
 }
@@ -1030,12 +1073,16 @@ Contact Section
 
 */
 
+#contact {
+    padding-top: 6rem;
+    padding-bottom: 20rem;
+}
+
 .contact__row {
     position: relative;
     height: 282px;
     background-color: #4267b2;
-    border-radius: 8px;
-    margin-bottom: 20rem;
+    border-radius: 8px;    
     overflow: hidden;
 }
 
@@ -1073,14 +1120,15 @@ Contact Section
 }
 
 .contact__header {
-    width: 53%;
+    width: 50%;
     line-height: 1.5;
     color: #fff;
-    font-size: 2rem;   
+    font-size: 2rem;
+    margin-right: 4rem;   
 }
 
 .contact__btn--wrapper {
-    width: 40%;
+    width: 50%;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -1258,3 +1306,415 @@ footer {
     color: #000;
 }
 
+
+
+/*
+
+Media Queries
+
+*/
+
+@media (max-width: 1360px) {
+    .pricing__plan--containers {
+        width: 320px;
+    }
+}
+@media (max-width: 1312px ) {
+    .testimon__img--section {
+        width: 40%;
+    }
+    .testimon__decrip {
+        width: 50%;
+    }
+}
+
+@media (max-width: 1280px) {
+    header {
+        height: 100%;
+    }
+    .header_left {
+        gap: 1rem;
+    }
+    .header_left, .header_right {
+        width: 50%;
+    }
+    .header_right {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .header_right--img {
+        width: 90%;
+        height: auto;
+    }
+    #landing {
+        height: 70vh;
+    }
+    #features {
+        height: 100%;
+    }
+    .steps__dotted {
+        height: 5rem;
+        width: 5rem;
+        left: 40%;
+        transform: translateY(-20px);
+    }     
+}
+
+@media (max-width: 1260px ) {
+    .contact__content {
+        padding-left: 3rem;
+        padding-right: 3rem;
+    }
+}
+
+@media (max-width: 1180px ) {
+    .pricing__divs {
+        flex-direction: column;
+        height: 100%;
+    }
+    #pricing {
+        height: 100%;
+        padding-bottom: 6rem;
+    }
+    .pricing__plan--containers {
+        width: 380px;
+    }
+    .pricing__heart {
+        left: -50px;
+        transform: translateY(1100px);
+    }
+    .testimon__top--header {
+        font-size: 2.2rem;
+    }    
+}
+
+@media (max-width: 1125px ) {
+    .contact__content {
+        flex-direction: column;
+        gap: 2rem;
+        text-align: center;        
+    }
+    .contact__header {
+        max-width: 32rem;
+        width: 100%;
+        margin-right: 0;        
+    }
+    .contact__btn--wrapper {
+        width: 100%;
+    }
+    .feature__title {
+        letter-spacing: .1rem;
+        text-align: center;
+    }
+    .feature__para {
+        width: 72%;
+    }
+}
+
+@media (max-width: 1060px) {
+    .values__list--container {
+        flex-direction: column;
+        width: 75%;
+    }
+    .values__title {
+        font-size: 2.2rem;
+    }
+    .values__description--para {
+        font-size: 1.1rem;
+    }
+}
+
+@media (max-width: 1036px) {
+    #landing {
+        height: 100%;
+    }
+    .landing__circle {
+        left: -11%;
+        top: 80%;
+    }
+    .nav__logo--link {
+        font-size: 1.6rem;
+    }
+    .header__container {
+        flex-direction: column;
+    }
+    .header_left {
+        width: 70%;
+        justify-content: center;
+        align-items: center;
+        padding-top: 5rem;
+        text-align: center;
+        gap: .5rem;
+    }
+    .header__title {
+        letter-spacing: .1rem;
+        font-size: 2rem;
+    }
+    .header__micro-form {
+        max-width: 460px;
+    }
+    .header__customers--list {
+        width: 500px;
+    }
+    .header_right {
+        width: 60%;
+    }
+    .header_right--img {
+        width: 100%;
+    }
+    .nav__right {
+        display: none;        
+    }
+    .nav__popup {
+        align-items: center;
+        justify-content: center;
+    }
+    .nav__toggle {
+        display: block;
+    }
+    .quality__description {
+        width: 50%;
+    }
+    .pricing__descrip {
+        text-align: center;
+    }
+    .pricing__descrip--para {
+        width: 70%;
+    }
+    #testimon {        
+        height: 100%;
+    }
+}
+
+@media (max-width: 890px) {
+    .testimon__row {
+        flex-direction: column;
+    }
+    .testimon__img--section {
+        width: 65%;
+    }
+    .testimon__decrip {
+        text-align: center;
+        width: 80%;
+    }
+    .testimon__top--para {
+        font-size: 1rem;
+    }
+    .testimon__review {
+        font-weight: 600;
+    }
+}
+
+@media (max-width: 852px) {
+    .feature__description {
+        width: 100%;
+    }
+    .feature__title {
+        width: 100%;
+    }
+    .pricing__descrip--para {
+        font-size: .92rem;
+    }
+}
+
+@media (max-width: 810px) {
+    .header_left {
+        width: 100%;
+    }
+    .header__micro-form {
+        flex-direction: column;
+        border: none;
+    }
+    .header__micro-form input {
+        border: 1px solid lightgray;
+        padding-left: 2rem;        
+    }
+
+    .header__micro-form input,
+    .header__micro-form button {
+        width: 100%;
+        margin-bottom: 1rem;
+        height: 48px;
+        border-radius: 30px;
+    }
+    .header__micro-form button {
+        margin-bottom: 0;
+    }
+    .header__customers--img {
+        width: 70%;
+    }
+    .header_right {
+        margin-top: 3rem;
+        width: 90%;
+    }
+    .feature__title {
+        font-size: 3rem;
+    }
+}
+
+@media (max-width: 796px) {
+    .features__circle {
+        top: 86%;
+        right: -11%;
+    }
+    #qauality {
+        height: auto;        
+    }
+    .quality__row {
+        gap: 4rem;
+        flex-direction: column-reverse;
+    }
+    .quality__right--wrapper {
+        width: 90%;        
+    }
+    .quality__description {
+        width: 80%;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+    }
+    .quality__description--header {
+        font-size: 2.5rem;
+        letter-spacing: .1rem;
+    }
+    .quality__description--para {
+        font-size: .92rem;
+    }
+    #values {
+        padding-top: 2rem;
+        padding-bottom: 6rem;
+        height: 100%;
+    }
+    .values__row {
+        gap: 3rem;
+        flex-direction: column-reverse;
+    }
+    .values__description {
+        width: 80%;
+        text-align: center;
+        margin: 0;
+        align-items: center;
+    }
+    .values__description--para {
+        font-size: 1rem;
+        margin-bottom: 2rem;
+    }
+    .values__display {
+        width: 75%;
+    }
+    .values__list {        
+        align-items: center;
+    }
+    .values__list--para {
+        text-align: center;
+    }
+    #steps {
+        height: 100%;
+        padding-bottom: 8rem;
+        padding-top: 8rem;
+    }
+    .steps__row {
+        flex-direction: column;
+    }
+    .steps__img--wrapper {
+        width: 65%;
+    }
+    .steps__description {
+        align-items: center;
+    }
+    .steps__span {
+        font-weight: 700;
+    }
+    .steps__title {
+        font-size: 2.5rem;
+    }
+    .steps__lists--wrapper {
+        width: 60%;
+    }
+    .steps__instruction--wrapper{
+        align-items: center;
+    }
+    .steps__list--item {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+}
+
+@media (max-width: 760px) {
+    .footer__top {
+        flex-wrap: wrap;
+        justify-content: flex-start;
+        gap: 6rem;
+    }    
+    .footer__bottom {        
+        flex-direction: column;
+        gap: 2rem;
+    }
+    .footer__container{
+        height: 100%;
+        padding-bottom: 4rem;
+    }
+}
+
+@media (max-width: 735px) {
+    .feature__para {
+        width: 100%;
+    }
+}
+
+@media (max-width: 690px) {
+    .contact__row {
+        height: 100%;
+    }
+    .contact__content {
+        padding: 3rem 0;
+    }
+    .contact__header {
+        font-size: 1.5rem;
+    }
+    .contact__btn--wrapper {
+       flex-direction: column;
+    }
+    .pricing__descrip {
+        width: 100%;
+    }
+    .pricing__title {
+        font-size: 2.2rem;
+    }
+    .pricing__descrip--para {
+        width: 100%;
+    }
+}
+
+@media (max-width: 640px ) {
+    .footer__top {
+        flex-wrap: wrap;
+        justify-content: center;
+        text-align: center;
+        gap: 1.5rem;
+    }
+    .contact__header {
+        width: 80%;
+    }
+    .testimon__decrip {
+        width: 100%;
+    }
+    .testimon__span {
+        font-size: 1rem;
+    }
+    .testimon__top--header {
+        font-size: 2rem;
+    }
+    .testimon__review--para {
+        font-size: 1rem;
+    }
+    .testimon__review--person {
+        flex-direction: column;
+    }
+    .testimon__profile--div {
+        flex-direction: column;
+        padding-bottom: 2rem;
+    }
+}
