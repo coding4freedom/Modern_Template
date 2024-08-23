@@ -195,7 +195,7 @@ nav {
     top: 5px;
     right: 0;
     width: 100%;
-    height: 40%;
+    height: 60%;
     background-color: #fff;
     border: 1px solid rgba(0, 0, 0, 0.2);
     border-radius: 6px;
@@ -1627,6 +1627,7 @@ Media Queries
         font-weight: 700;
     }
     .steps__title {
+        text-align: center;
         font-size: 2.5rem;
     }
     .steps__lists--wrapper {
@@ -1716,5 +1717,23 @@ Media Queries
     .testimon__profile--div {
         flex-direction: column;
         padding-bottom: 2rem;
+    }
+}
+
+@media (max-width: 470px) {
+    .feature__title,
+    .quality__description--header,
+    .steps__title {
+        font-size: 2rem;
+    }
+
+    .pricing__divs {
+        align-items: center;
+    }
+    .pricing__plan--containers {
+        width: 320px;
+    }
+    .feature__service--options {
+        margin-right: 0;
     }
 }
